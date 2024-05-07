@@ -3,3 +3,4 @@ pandas
 scikit-learn == 1.2.2
 joblib
 matplotlib
+streamlit == 1.34.0
