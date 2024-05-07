@@ -3,7 +3,7 @@ from prediction import predict
 import numpy as np
 
 st.title ('Insurance predictor')
-st.write ('Please select SAT score and press the ***Predict GPA*** button')
+st.write ('Please select age')
 
 
 sat = st.number_input ('select', min_value= 400, max_value= 1600)
