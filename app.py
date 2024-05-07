@@ -1,6 +1,7 @@
 import streamlit as st
 from prediction import predict
 import numpy as np
+import pickle
 
 st.title ('Insurance predictor')
 st.write ('Please select age')
@@ -16,6 +17,8 @@ e = st.number_input ('select', min_value= 0, max_value= 2)
 
 f = [[a, b, c, d, e]]
 
+model = pickle.load(open('model.pkl','rb'))
+
 if st.button ('Predict Insurance'):
-    GPA = predict (f)
+    GPA = model.predict (f)
     st.write ('Insurance would be', GPA)
