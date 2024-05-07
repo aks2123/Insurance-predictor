@@ -14,8 +14,8 @@ d = st.number_input ('select', min_value= 0, max_value= 20)
 st.write ('Please select smoking status: 0 for smoker, 1 for non-smoker ')
 e = st.number_input ('select', min_value= 0, max_value= 2)
 
-sat = [[a,b,c,d,e]]
+sat = [a,b,c,d,e]
 
-if st.button ('Predict GPA'):
+if st.button ('Predict Insurance'):
     GPA = predict (sat)
     st.write ('Insurance would be', GPA)
