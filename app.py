@@ -17,5 +17,5 @@ e = st.number_input ('select', min_value= 0, max_value= 2)
 sat = [a,b,c,d,e]
 
 if st.button ('Predict Insurance'):
-    GPA = predict (sat)
+    GPA = predict ([sat])
     st.write ('Insurance would be', GPA)
