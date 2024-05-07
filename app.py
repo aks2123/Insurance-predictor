@@ -14,7 +14,7 @@ d = st.number_input ('select', min_value= 0, max_value= 20)
 st.write ('Please select smoking status: 0 for smoker, 1 for non-smoker ')
 e = st.number_input ('select', min_value= 0, max_value= 2)
 
-f = np.array ([a, b, c, d, e]).reshape (1, -1)
+f = [[a, b, c, d, e]]
 
 if st.button ('Predict Insurance'):
     GPA = predict (f)
